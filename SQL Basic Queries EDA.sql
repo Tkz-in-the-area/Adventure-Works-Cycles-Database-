@@ -34,7 +34,7 @@ GROUP BY SalesOrderNumber, OrderDate
 HAVING SUM(SalesAmount) > 1000
 ORDER BY InvoiceSubTotal DESC;
 
--- Lets Add a Top(N) Filter
+-- Lets Add a Top(N) Filter --
 SELECT TOP(10) PERCENT
        SalesOrderNumber AS InvoiceNumber,
        OrderDate,
@@ -46,4 +46,5 @@ WHERE SalesTerritoryKey = 6
 GROUP BY SalesOrderNumber, OrderDate
 HAVING SUM(SalesAmount) > 1000
 ORDER BY InvoiceSubTotal DESC;
+
 
